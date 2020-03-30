@@ -26,9 +26,9 @@ class MultipleViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         tableView.register(UINib(nibName: "TextCell", bundle: nil), forCellReuseIdentifier: "titleCell")
-//        tableView.register(TextCell.self, forCellReuseIdentifier: "titleCell")
+
         tableView.register(UINib(nibName: "ImagesCell", bundle: nil), forCellReuseIdentifier: "pairOfImage")
-//        tableView.register(ImagesCell.self, forCellReuseIdentifier: "pairOfImage")
+
         tableView.estimatedRowHeight = 50
         
         let observable = Observable<[MyModel]>.just([
